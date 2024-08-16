@@ -11,6 +11,31 @@ Inicialmente el sistema operativo que se establece es Windows 10, el terminal qu
 winget install Neovim.Neovim
 ~~~
 
+[Git](https://git-scm.com/)
+~~~
+winget install --id Git.Git -e --source winget
+~~~
+
+[NodeJS](https://nodejs.org/en/)
+~~~
+winget install --id OpenJS.NodeJS.LTS
+~~~
+
+[Ripgrep](https://github.com/BurntSushi/ripgrep)
+~~~
+winget install BurntSushi.ripgrep.MSVC
+~~~
+
+[Fd](https://github.com/sharkdp/fd)
+~~~
+winget install sharkdp.fd
+~~~
+
+[Lazygit](https://github.com/jesseduffield/lazygit)
+~~~
+winget install -e --id=JesseDuffield.lazygit
+~~~
+
 ### Instalación
 
 Elimine o haga una copia de seguridad de la carpeta nvim antigua por si acaso. Los siguientes comandos muestran cómo eliminar la configuración anterior.
