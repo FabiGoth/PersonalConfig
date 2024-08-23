@@ -2,6 +2,54 @@
 
 Inicialmente el sistema operativo que se establece es Windows 10, el terminal que se emplea es 'Windows Terminal' y la shell es 'Powershell'.
 
+## Terminal Windows
+
+### Requisitos
+
+[Windows Terminal](https://github.com/microsoft/terminal)
+~~~
+winget install --id Microsoft.WindowsTerminal -e
+~~~
+
+[PowerShell](https://github.com/PowerShell/PowerShell)
+~~~
+winget install --id Microsoft.Powershell --source winget
+~~~
+
+[PSReadLine](https://github.com/PowerShell/PSReadLine)
+~~~
+Install-Module PSReadLine
+~~~
+
+[Oh My Posh](https://github.com/jandedobbeleer/oh-my-posh)
+~~~
+winget install JanDeDobbeleer.OhMyPosh -s winget
+~~~
+
+[Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+~~~
+Install-Module -Name Terminal-Icons -Repository PSGallery
+~~~
+
+[Nerd Fonts](https://www.nerdfonts.com/)
+
+<https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Iosevka.zip>
+
+>Descomprimir e instalar las fuentes 
+
+### Instalación
+
+Una vez instalado los requisitos hay que editar las siguientes configuraciones:
+
+    - Windows Terminal
+        Copiar o editar el fichero \'settings.json\' de la ruta $ENV:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_\[Ident\]\LocalState\settings.json
+
+    - Perfil PowerShell
+        Copiar o editar el fichero \'Microsoft.PowerShell_profile.ps1\' de la ruta $ENV:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+    - Tema Oh My Posh
+        Copiar el fichero \'arkanvongothic.omp.json\' de la ruta $ENV:POSH_THEMES_PATH\arkanvongothic.omp.json
+
 ## NeoVIM
 
 ### Requisitos
@@ -41,6 +89,7 @@ winget install -e --id=JesseDuffield.lazygit
 <https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev1/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1.7z>
 
 >Descomprimir en el \'C:\Program Files\MinGW64\' y añadir en el \'PATH\' la linea \'C:\Program Files\MinGW64\bin\'.
+>Dentro de la carpeta \'C:\Program Files\MinGW64\bin' hay que renombrar el fichero \'mingw32-make.exe\' a \'make.exe\'.
 
 [LuaRocks](https://luarocks.org/)
 
